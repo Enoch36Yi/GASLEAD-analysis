@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-15T20:58:27.120779+00:00",
+  "rules": {
+    "piezo": {
+      "threshold": 0.031701162677454146,
+      "direction": "higher",
+      "balanced_accuracy": 1.0,
+      "reproduced_float_threshold": 0.03170116267745421,
+      "feature": "band_fraction_002000_004000__median",
+      "source": "August 6 full-data modal-feature refit; training BA is not a held-out performance estimate"
+    },
+    "mems": {
+      "threshold": 0.10707876187408599,
+      "direction": "higher",
+      "balanced_accuracy": 1.0,
+      "feature": "band_fraction_700000_nyquist__median",
+      "source": "August 6 full-data modal-feature refit; training BA is not a held-out performance estimate"
+    },
+    "ae": {
+      "threshold": 0.0009833271521825636,
+      "direction": "lower",
+      "balanced_accuracy": 0.759090909090909,
+      "feature": "band_fraction_001000_002000__median",
+      "source": "August 6 full-data modal-feature refit; training BA is not a held-out performance estimate"
+    }
+  },
+  "primary_threshold_source": "Literal strict threshold from protocol Section 7.1; full-data reproduction differs only at floating-point precision",
+  "diameter_metadata": {
+    "condition": "Large",
+    "historical_mm": 2.3,
+    "corrected_mm": 1.89,
+    "correction_date": "2026-10-15",
+    "source": "Stage_4/17_ORIFICE_SIZE_CORRECTION_2026-10-15.md"
+  },
+  "active_channels": [
+    "piezo",
+    "mems",
+    "ae"
+  ],
+  "excluded_channels": {
+    "contact_mic": "October 15 pre-recording amendment: deliberately disconnected; excluded from EI2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "export_kind": "Public code-only packaging revision",
+  "exported_utc": "2026-10-30T01:34:02.124748+00:00",
+  "upstream_package_prepared_utc": "2026-10-15T21:12:41.266844+00:00",
+  "upstream_package_lock_sha256": "ac096ea6881e49046af4dd23fb10c3df9f8aafdbe52a4f7a8497d2198d52eae3",
+  "unchanged_files_sha256": {
+    "ei2.py": "85441faeb6b0dd3853e5e0361cf5301338eeb08cea026876b7286516063c4c40",
+    "frozen_features.py": "9fb99680000e006b044be62702714c75f594d820a55354b6a97402d0a75d35c2",
+    "frozen_threshold.py": "a98967b648c3e263d42380b0bfd109588be24e48653cc2f277d58ee8cbf42857",
+    "LOCKED_RULES.json": "a7ab6af49d364f2c49f33e55844ef5eac9150d39e83c5c1cb6b877e02ff2d530",
+    "SESSION_RECORD.template.json": "c1f7025da9a52f6c8a1b089fd09ea3464366177a1a77be7aef363bc32eae1e2f",
+    "recording_manifest.template.csv": "f2ddf24099c66e4225163185f77cc791932ad12c543a2ef63b7c443a59fafa43",
+    "requirements.txt": "66628af45a1f15c10ecd3e3f62094c44e7166423eb5a64c7a5fe09e36dbc0252",
+    "run.ps1": "743e894783a9412c8d6bd21758d3ee736053ffe2c88883da0135fa10a7960da9"
+  },
+  "packaging_changes": [
+    "Public README replaces private operational documentation.",
+    "SOURCE_HASHES.json retains only analysis-source and optional protocol hashes; the private workspace inventory is omitted.",
+    "The test suite retains the existing 80 synthetic threshold-oracle comparisons instead of the private August 6 measurement-fixture check.",
+    "PACKAGE_LOCK.json identifies this export and inventories only the exported package. It is not evidence of pre-recording freezing."
+  ],
+  "upstream_test_ei2_sha256": "daef8d27c81292d9168c688c67d9bc007f75dcfae3c3756174b4ed5fa1f576ac",
+  "export_test_ei2_sha256": "dcb5d51559e6f7b4c05fdfb8f421dd362b602933ff6d8f507baf5950cd70d8be",
+  "private_material_excluded": [
+    "Raw recordings and derived measurement fixtures",
+    "Photographs, filled session inputs and current-session inventory",
+    "Protocol/acquisition snapshots and internal handoffs",
+    "Manuscripts, Stage packages and private workspace inventories",
+    "Previous analysis outputs, synthetic demo output files and historical logs"
+  ],
+  "known_scope": "The original runner and report wording describe the historical OPEN/SEALED design. Actual setup and deviations belong in local session inputs and reviewed output interpretation.",
+  "recorded_data_analysis_performed_for_export": false
+}

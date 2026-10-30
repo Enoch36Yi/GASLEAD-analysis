@@ -1,0 +1,21 @@
+{
+  "session_date": "2026-10-15",
+  "schedule": "A",
+  "completed_input_sheet_source": null,
+  "protocol_locked_before_first_recording": null,
+  "new_evidence_source_approved": null,
+  "approval_source": null,
+  "operator": null,
+  "timestamp_timezone": "unspecified; relative save-timestamp differences only",
+  "nominal_condition": "August 6 Large, corrected diameter 1.89 mm",
+  "corrected_orifice_mm": 1.89,
+  "switching_arrangement_actually_used": null,
+  "iepe_gain_observed": null,
+  "sb4_filter_observed": null,
+  "active_channels": ["piezo", "mems", "ae"],
+  "excluded_channel": "PVDF/contact_mic/ai3 disconnected by pre-recording October 15 amendment; verify actual sheet",
+  "pressure_notes": null,
+  "compressor_notes": null,
+  "protocol_deviations": [],
+  "synthetic": false
+}
