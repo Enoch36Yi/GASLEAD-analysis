@@ -1,8 +1,21 @@
 # GASLEAD analysis
 
 - Analysis code for compressed-air leak testing with IEPE, MEMS and AE sensors.
-- Includes the August 6 rule, held-out cycle testing, paired randomization, time/order controls and channel stability checks.
-- Install: `python -m pip install -r EI2_automation/requirements.txt` (Python 3.12).
+- [ei2.py](EI2_automation/ei2.py): runs inventory, fixed-rule testing, held-out cycle testing, paired randomization, time/order controls and channel stability checks.
+- [frozen_features.py](EI2_automation/frozen_features.py): extracts spectral features using the original feature calculations.
+- [frozen_threshold.py](EI2_automation/frozen_threshold.py): provides the original threshold-fitting function for regression tests.
+- [test_ei2.py](EI2_automation/test_ei2.py): checks the analysis calculations, file mapping and data-quality checks using synthetic cases.
+- [run.ps1](EI2_automation/run.ps1): launches the Python commands from PowerShell.
+- [requirements.txt](EI2_automation/requirements.txt): lists the required Python packages.
+- [LOCKED_RULES.json](EI2_automation/LOCKED_RULES.json): stores the August 6 features, thresholds and classification directions.
+- [recording_manifest.template.csv](EI2_automation/recording_manifest.template.csv): maps recording slots, cycles, states, filenames and exclusions.
+- [SESSION_RECORD.template.json](EI2_automation/SESSION_RECORD.template.json): holds session details, observed settings, deviations and approval status.
+- [SOURCE_HASHES.json](EI2_automation/SOURCE_HASHES.json): records the retained upstream analysis and protocol source hashes.
+- [PACKAGE_LOCK.json](EI2_automation/PACKAGE_LOCK.json): records file hashes for package-integrity checks.
+- [EXPORT_PROVENANCE.json](EI2_automation/EXPORT_PROVENANCE.json): documents the code-only export and its changes from the private package.
+- [.gitattributes](.gitattributes): preserves analysis-file bytes across Git checkouts.
+- [.gitignore](.gitignore): keeps local data, session inputs, outputs and environment files out of Git.
+- Install with Python 3.12: `python -m pip install -r EI2_automation/requirements.txt`.
 - Verify: `python EI2_automation/ei2.py verify-package`; test: `python -m unittest discover -s EI2_automation -p test_ei2.py`.
-- Prepare local inputs: `python EI2_automation/ei2.py prepare --out local_inputs`; enter the actual session date and file mapping before running.
-- Raw data, measurement fixtures, photos, session records and analysis outputs stay local. The numerical code is unchanged; export details are in `EI2_automation/EXPORT_PROVENANCE.json`.
+- Prepare local inputs: `python EI2_automation/ei2.py prepare --out local_inputs`; enter the actual session date and file mapping.
+- Raw data, measurement fixtures, photos, session records and analysis outputs stay local.
